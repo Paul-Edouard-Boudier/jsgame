@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JSGame</title>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <button class="resetButton" data-action="reset">Reset</button>
+    <section data-state="optionScreen" class="gameScreens hidden">
+      <h3>Awesomest Game: Menu</h3>
+      <label>Number of cells on the X axis</label>
+      <input type="number" name="x" value="10">
+      <label>Number of cells on the Y axis</label>
+      <input type="number" name="y" value="10">
+      <button data-action="startGame">Launch Game</button>
+    </section>
+    <section data-state="playScreen" class="gameScreens hidden"></section>
+    <section data-state="victory">
+      <h1 class="white">Victory</h1>
+    </section>
+    <section data-state="defeat">
+        <h1 class="white">Defeat</h1>
+      <div class="container">
+        <p class="white">Frieza got you and the detector, he'll find the dragonballs because of you and get eternal life as he wanted.</p>
+        <p class="white">You can't do that to us Goku !</p>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="javascript/script.js"></script>
+</html>
